@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Mobile_camp.iml" filepath="$PROJECT_DIR$/.idea/modules/Mobile_camp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Mobile_camp_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Mobile_camp_main.iml" group="Mobile_camp" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Mobile_camp_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Mobile_camp_test.iml" group="Mobile_camp" />
+    </modules>
+  </component>
+</project>
