@@ -24,6 +24,8 @@ public class AndroidHybridAppExample {
 
         cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Android emulator");
 
+        cap.setCapability("avd", "Nexus_5X_API_25");
+
         cap.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
 
         AndroidDriver driver=new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"),cap );
@@ -37,7 +39,7 @@ public class AndroidHybridAppExample {
 
         driver.findElement(By.id("com.hybridapptest.forandroid:id/btn_move")).click();
 
-        Set<String> s=driver.getContextHandles();
+        Set<String> s= driver.getContextHandles();
 
         for(String handle : s)
 
@@ -49,7 +51,6 @@ public class AndroidHybridAppExample {
         System.out.println(driver.getContext());
 
         driver.context("WEBVIEW_chrome");
-
 
         driver.findElement(By.name("q")).sendKeys("Handling hybrid app");
 

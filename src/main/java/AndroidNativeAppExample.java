@@ -37,7 +37,6 @@ public class AndroidNativeAppExample {
             w1.get(1).click();
             System.out.println("Test passed");
             service.stop();
-            driver.close();
 
 //
 //        driver.findElementByXPath("//android.widget.TextView[@text='Views']").click();

@@ -10,11 +10,11 @@ public class AndoirdWebAppExample  extends BaseClass {
 
 // TODO Auto-generated method stub
             AndroidDriver<AndroidElement> driver=getDriverWithBrowserCaps();
-/* driver.get("http://facebook.com");
-driver.findElementByXPath("//*[@id='u_0_1']/div[1]/div/input").sendKeys("qwerty");
-driver.findElementByName("pass").sendKeys("12345");
-driver.findElementByXPath("//button[@value='Log In']").click();*/
-//rahulonlinetutor@gmail.com
+            /* driver.get("http://facebook.com");
+            driver.findElementByXPath("//*[@id='u_0_1']/div[1]/div/input").sendKeys("qwerty");
+            driver.findElementByName("pass").sendKeys("12345");
+            driver.findElementByXPath("//button[@value='Log In']").click();*/
+            //rahulonlinetutor@gmail.com
 
             driver.get("http://cricbuzz.com");
             driver.findElementByXPath("//a[@href='#menu']").click();
