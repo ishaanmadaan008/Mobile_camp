@@ -38,18 +38,6 @@ public class AndroidNativeAppExample {
             System.out.println("Test passed");
             service.stop();
 
-//
-//        driver.findElementByXPath("//android.widget.TextView[@text='Views']").click();
-//        //Tap
-//        TouchAction t = new TouchAction(driver);
-//        WebElement expandList=	driver.findElementByXPath("//android.widget.TextView[@text='Expandable Lists']");
-//        t.tap(tapOptions().withElement(element(expandList))).perform();
-//        driver.findElementByXPath("//android.widget.TextView[@text='1. Custom Adapter']").click();
-//        WebElement pn=	driver.findElementByXPath("//android.widget.TextView[@text='People Names']");
-//
-//        t.longPress(longPressOptions().withElement(element(pn)).withDuration(ofSeconds(2))).release().perform();
-//        //Thread.sleep(2000);
-//        System.out.println(driver.findElementById("android:id/title").isDisplayed());
 
 
     }
