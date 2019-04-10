@@ -26,7 +26,6 @@ public class BaseClass {
         capabilities.setCapability("avd", "Nexus_5X_API_25");
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Nexus_5X_API_25");
         capabilities.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
-        capabilities.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
         AndroidDriver driver = new AndroidDriver(service.getUrl(), capabilities);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         return driver;
@@ -55,6 +54,8 @@ public class BaseClass {
 
         AppiumDriverLocalService service=AppiumDriverLocalService.buildService(new AppiumServiceBuilder().usingAnyFreePort());
         service.start();
+        File appDir = new File("src/main/resources/ios");
+        File app = new File(appDir, "UICatalog.app");
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
         desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME,"iPhone 6");
         desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_NAME,"iOS");
@@ -65,7 +66,7 @@ public class BaseClass {
         desiredCapabilities.setCapability(MobileCapabilityType.FULL_RESET, true);
         desiredCapabilities.setCapability("connectHardwareKeyboard", false);
 
-        desiredCapabilities.setCapability(MobileCapabilityType.APP,"/Users/ishaanmadaan/Library/Developer/Xcode/DerivedData/UICatalog-bixavueappzakgarnpkcuberzwqc/Build/Products/Debug-iphonesimulator/UICatalog.app");
+        desiredCapabilities.setCapability(MobileCapabilityType.APP,app.getAbsolutePath());
         driver= new IOSDriver<IOSElement>(service.getUrl(), desiredCapabilities);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         return driver;
